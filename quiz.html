@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>student Profile Card</title>
+
+    <style>
+        body {
+            background-color: #f5b349;
+            font-family: Arial;
+            text-align: center;
+        }
+
+        .card {
+            background-color: #fa7979;
+            width: 90%;
+            max-width: 550px;
+            margin: 30px auto;
+            padding: 25px;
+            border: 3px solid #713b15;
+            border-radius: 15px;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+        }
+
+        h2 {
+            color: darkred;
+        }
+
+        p {
+            font-size: 17px;
+        }
+
+        .details {
+            background-color: #fff8dc;
+            margin: 15px;
+            padding: 10px;
+            border: 1px solid rgb(191, 255, 0);
+        }
+
+        button {
+            padding: 12px;
+            background-color: rgb(255, 132, 0);
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                width: 85%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card" id="mycard">
+
+        <h2>STUDENT PROFILE</h2>
+
+        <img src="Screenshot 2026-04-26 221839.png" alt="My Pic">
+
+        <h2>Abhinav Singh</h2>
+
+        <p><b>College:</b> KIET Group of Institutions, Ghaziabad</p>
+        <p><b>Branch:</b> Information Technology (IT)</p>
+        <p><b>Course:</b> Bachelor of Technology</p>
+        <p><b>Admission Year:</b> 1997</p>
+        <p><b>Club:wrestling</b></p>
+        <div class="details">
+            <h3>Academic Details</h3>
+            <p>Class 12: Passed in 1996</p>
+            <p>Current Semester: First Semester</p>
+            <p>CGPA: 8.2 </p>
+        </div>
+
+        <div class="details">
+            <h3>Skills</h3>
+            <p>Basic HTML and CSS</p>
+            <p>Learning C++ Programming</p>
+            <p>speaking</p>
+            <p>social</p>
+
+        </div>
+
+        <div class="details">
+            <h3>My Hobbies</h3>
+            <p>Coding and Technology</p>
+            <p>Gym and Fitness</p>
+            <p>books</p>
+            <p>participating in small tournaments</p>
+        </div>
+
+        <button onclick="changeColor()">
+            Change Background
+        </button>
+
+        <footer>
+            
+        </footer>
+
+    </div>
+
+    <script>
+        function changeColor() {
+            var card = document.getElementById("mycard");
+
+            if (card.style.backgroundColor == "lightblue") {
+                card.style.backgroundColor = "lightsalmon";
+            }
+            else {
+                card.style.backgroundColor = "lightyellow";
+            }
+        }
+    </script>
+
+</body>
+</html>
